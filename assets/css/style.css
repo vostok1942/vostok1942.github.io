@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
+
+
+/* ============================
+   THEME VARIABLES
+   ============================ */
+:root {
+  --bg-dark: #181818;
+  --bg-sidebar: #222;
+  --accent-orange: #F26419;
+  --text-light: #f5f5f5;
+  --text-muted: #bbbbbb;
+  --main-font: 'Space Grotesk', 'Segoe UI', 'Roboto', Arial, sans-serif;
+  --border-radius: 10px;
+  --transition: 0.2s;
+  --sidebar-width: 180px;
+  --navbar-height: 4rem;
+}
+
+/* ============================
+   BASE STYLES
+   ============================ */
+body {
+  margin: 0;
+  font-family: var(--main-font);
+  background: var(--bg-dark);
+  color: var(--text-light);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* ============================
+   SIDEBAR
+   ============================ */
+.sidebar {
+  background: var(--bg-sidebar);
+  width: var(--sidebar-width); /* expands to fit the longest line */
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.08);
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* min-height: 100%; */
+  height: 100vh;
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+nav li {
+  margin: 1rem 0;
+}
+
+nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  transition: background var(--transition), color var(--transition);
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 1.2rem;
+  right: 1.2rem;
+  z-index: 1001;
+}
+
+.mobile-navbar {
+  display: none;
+}
+
+.menu-overlay {
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  background: var(--bg-sidebar); /* solid dark for minimal look */
+  z-index: 1000;
+  justify-content: flex-start;
+  align-items: center;
+  transition:
+    opacity 0s ease,
+    transform 0.5s ease;
+  transform: translateY(-200vw);
+}
+
+.menu-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.menu-overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.menu-overlay li {
+  margin: 2.5rem 2rem;
+  opacity: 0;
+  /* transform: translateY(30px);
+  transition: opacity 0.4s ease, transform 0.4s ease; */
+}
+
+.menu-overlay.active li {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu-overlay a {
+  color: var(--text-muted);
+  font-size: 2.2rem;
+  text-decoration: none;
+  font-family: var(--main-font);
+  font-weight: 700;
+  /* letter-spacing: 0.05em; */
+  /* transition: color 0.2s; */
+}
+
+
+/* ============================
+   MAIN CONTENT
+   ============================ */
+.main-content {
+  flex: 1; /* take remaining space next to sidebar */
+  flex-direction: column;
+  display: flex;
+  justify-content: center; /* centre horizontally */
+  align-items: center;     /* centre vertically */
+  padding: 0 2rem;
+  box-sizing: border-box;
+  margin-left: var(--sidebar-width); /* account for fixed sidebar */
+}
+
+section {
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  background-color: var(--bg-sidebar);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+  max-width: 700px;  /* controls desktop "skinny column" feel */
+  width: 100%;
+  margin: 1rem auto;
+  box-sizing: border-box;
+}
+
+#about-me a,
+#about-me a:visited {
+  color: var(--accent-orange);
+  text-decoration: underline;
+}
+
+
+#socialsIconContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.homeIcons,
+.homeIcons:visited {
+  width: 35px;
+  color: var(--text-light); 
+  height: 35px;
+  transition: all 400ms cubic-bezier(.47,1.64,.41,.8);
+  vertical-align: middle;
+}
+
+
+/* ============================
+   TYPOGRAPHY
+   ============================ */
+h1, h2 {
+  color: var(--accent-orange);
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+p {
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+/* ============================
+   MOBILE VIEWPORT STYLES
+   ============================ */
+@media (max-width: 768px) {
+
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: none;  /* hide sidebar */
+  }
+
+  .mobile-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: var(--bg-sidebar);
+    height: var(--navbar-height);
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1002;
+    padding-right: 0rem;
+  }
+
+  .hamburger {
+    display: block; /* show hamburger */
+    position: static;  /* reset from fixed */
+    z-index: 1003;  /* above mobile navbar */
+  }
+
+  .sidebar nav ul {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .sidebar nav li {
+    margin-bottom: 0;
+  }
+
+  .sidebar nav a {
+    width: auto;
+    padding: 0.5rem;
+  }
+
+
+  .main-content {
+    padding: 1.1rem;
+    /* background-color: red; */
+    max-width: 500px;
+    margin: var(--navbar-height) auto;   /* centre the main content */
+    /* gap: 1rem; */
+  }
+
+  section {
+    max-width: 100%;   /* allow full width */
+    width: 100%;
+    margin: 0;         /* remove forced centring */
+    padding: 1.5rem;
+  }
+
+  #about-me {
+    margin-bottom: 1rem;
+  }
+
+}
+
+
+/* ============================
+   HOVER EFFECTS (for non-touch devices)
+   ============================ */
+@media (hover: hover) and (pointer: fine) {
+  
+  nav a:hover, nav a:focus {
+  background: var(--accent-orange);
+  color: var(--bg-dark);
+}
+
+  .homeIcons:hover, .homeIcons:focus {
+    color: var(--text-muted);
+    transform: scale(1.25);
+    cursor: pointer;
+  }
+
+  .contact-form button[type="submit"]:hover,
+.contact-form button[type="submit"]:focus {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px var(--accent-orange);
+}
+
+  .project-row:hover {
+    box-shadow: 0 0 20px var(--accent-orange);
+  }
+}
+
+
+
+
+/* ================================================ */
+/* Contact Form Styles */
+/* ================================================ */
+
+
+
+
+#nameInputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+#nameInputs div {
+    flex: 1;
+    /* background-color: red; */
+}
+
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.205);
+  font-family: var(--main-font);
+}
+
+
+
+.contact-form-container {
+  max-width: 400px;
+  /* outline: red solid 1px; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  background-color: var(--bg-sidebar);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+
+.contact-form-container h1 {
+  color: var(--accent-orange);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact-form label {
+  display: block;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: var(--main-font);
+  width: 100%;
+  resize: vertical;
+  min-width: 0;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: var(--border-radius);
+  background: var(--bg-dark);
+  box-shadow: 0 0 0 0.8px var(--accent-orange);
+  color: var(--text-light);
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: background var(--transition), box-shadow var(--transition);
+}
+
+.contact-form textarea {
+  flex-grow: 1;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  background: #181818;
+  box-shadow: 0 0 0 2px var(--accent-orange);
+}
+
+.contact-form button[type="submit"] {
+  background: linear-gradient(45deg, #F26419, #FF7E00);
+  color: var(--bg-dark);
+  font-family: var(--main-font);
+  font-weight: bold;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.75rem 1.4rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all var(--transition) ease;
+  display: block;
+  margin: 0 auto;
+}
+
+#result {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+#result:empty {
+  display: none;
+}
+
+
+/* ================================================ */
+/* PROJECTS PAGE STYLES*/
+/* ================================================ */
+
+
+.projects-heading {
+  text-align: center;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background: var(--bg-dark);  /* Ensure it doesn't become transparent over content */
+  z-index: 10;         /* Ensure it stays above other elements */
+  padding: 20px;       /* Optional: for spacing */
+  margin: 0;
+  box-shadow: 0 25px 15px -15px #181818ce;
+}
+
+.projects-list {
+  display: flex;
+  margin: 2rem auto;
+  width: auto;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-row {
+  display: flex;
+  align-items: stretch;
+  height: 220px;
+  max-width: 700px;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  transition: all var(--transition) ease;
+  background-color: var(--bg-sidebar);
+  overflow: hidden;
+}
+
+.project-content {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+
+.project-description {
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: auto;
+}
+
+.project-dates {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.project-title {
+  display: -webkit-box;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--accent-orange);
+}
+
+  
+
+
+
+.project-image {
+  display: flex;
+  flex: 0 0 40%;
+  overflow: hidden;
+}
+
+.project-image img {
+  width : 100%;
+  height : 100%;
+  object-fit : cover;
+  object-position: center center;
+}
+
+
+@media (max-width: 768px) {
+  .project-title {
+    font-size: 1.3rem;
+  }
+
+
+
+  .project-content {
+    flex: 0 0 40%;
+    padding: 1.2rem;
+  }
+
+  .project-row {
+    flex-direction: column-reverse;
+    height: auto;
+    align-items: center;
+  }
+
+  .project-image {
+  flex: none;
+  width: 100%;
+  aspect-ratio: 4/3;
+}
+
+
+ .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ensures fill + crop */
+    object-position: center center;
+ }
+}

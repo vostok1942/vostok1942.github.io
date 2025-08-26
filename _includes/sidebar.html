@@ -1,0 +1,52 @@
+<aside class="sidebar">
+  <nav aria-label="Main navigation" class="nav-menu">
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/projects.html">Projects</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</aside>
+
+<!-- Mobile navbar -->
+<div class="mobile-navbar">
+  <button class="hamburger hamburger--squeeze" type="button" id="hamburgerBtn">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+</div>
+
+<!-- Overlay menu (mobile only, shares the same links for consistency) -->
+<div class="menu-overlay" id="navigation">
+  <ul>
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/projects.html">Projects</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+  </ul>
+</div>
+
+
+
+<script>
+// filepath: d:\miron-site\_includes\sidebar.html
+const hamburger = document.getElementById("hamburgerBtn");
+const overlay = document.getElementById("navigation");
+
+hamburger.addEventListener("click", function() {
+  hamburger.classList.toggle("is-active");
+  overlay.classList.toggle("active");
+  document.body.style.overflow = overlay.classList.contains("active") ? "hidden" : "";
+});
+
+overlay.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.body.style.overflow = "";
+    // Wait for transition before removing .active
+    setTimeout(() => {
+      overlay.classList.remove("active");
+      hamburger.classList.remove("is-active");
+    }, 500); // match your CSS transition duration
+  });
+});
+</script>

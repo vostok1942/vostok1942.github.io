@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=3' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/burgerStyles.css' | relative_url }}">
+</head>
+<body class="main-content">
+  <section>
+  {% include sidebar.html %}
+  <article class="project">
+  <h1 id="project-title">{{ page.title }}</h1>
+  <p><em>{{ page.start_date | date: "%B %Y" }} to
+        {% if page.end_date %}
+          {{ page.end_date | date: "%B %Y" }}
+        {% else %}
+          Present
+        {% endif %}</em></p>
+    {{ content }}
+</article>
+</section>
+</body>
+</html>
