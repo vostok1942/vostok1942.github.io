@@ -5,14 +5,12 @@ title: Home
 <main class="main-content">
 <section id="about-me">
   <h1>Miron Alexandrov</h1>
-  <p>Welcome to my personal website!</p>
+  <p>Hello, and welcome to my personal website.</p>
   <p>
     I'm a second-year aerospace engineering student at the University of Bath with a strong interest in sustainable aviation. Currently a junior engineer on the Bath University Rocket Team, working on the payload and recovery system.</p>
 
 <p>Alongside my studies, I’m involved with Amideast as a STEM Ambassador and have represented the organisation at several events, most recently the <a href="https://weempowersummit.my.canva.site">Women’s Economic Empowerment Summit</a> held in Dubai.</p>
 
-<p>This website is a work in progress. Thanks for visiting :)
-  </p>
 </section>
 
 <section id=socialsIconContainer>
