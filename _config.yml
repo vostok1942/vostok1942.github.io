@@ -21,9 +21,7 @@
 title: Miron Alexandrov | Personal Website
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Miron Alexandrov's personal website and portfolio. Aerospace engineering Student with a passion for web design.
-  Welcome to my corner of the internet where I share my projects, thoughts, and experiences.
-  Feel free to explore my work and get in touch!
+  Miron Alexandrov's personal website and portfolio.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://mironalexandrov.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  vostok1942
