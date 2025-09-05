@@ -2,55 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 
-.ubuntu-light {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.ubuntu-regular {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.ubuntu-medium {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.ubuntu-bold {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.ubuntu-light-italic {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.ubuntu-regular-italic {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.ubuntu-medium-italic {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.ubuntu-bold-italic {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-
 
 
 
@@ -217,6 +168,54 @@ section {
   margin: 1rem auto;
   box-sizing: border-box;
 }
+
+#headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#headline h1 {
+  font-size: 1.6rem;
+  align-self: center;
+  margin: 0;
+}
+
+#headline p {
+  color: var(--text-muted);
+  margin: 0;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+#headline-logo {
+  min-height: 150px;
+  /* background-color: red; */
+  margin: auto;
+  margin-top: -10px;
+  /* margin-bottom: -10px; */
+}
+
+
+hr {
+  height: 2px; /* Make the hr line thicker */
+  border: none; /* Remove default border */
+  background-image: radial-gradient(circle, #bbbbbbb7, #bbbbbb07); /* Radial gradient from center */
+  width: 100%; /* Adjust width as needed */
+  margin: 20px auto; /* Center the hr element */
+}
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+}
+
+#bio {
+  margin: auto;
+}
+
+
 
 #about-me a,
 #about-me a:visited {
