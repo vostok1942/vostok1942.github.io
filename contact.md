@@ -14,15 +14,15 @@ title: Contact
     <div id="nameInputs">
     <div>
       <label for="first_name">First Name</label>
-      <input type="text" name="name" id="first_name" placeholder="Gregory" required />
+      <input type="text" name="name" id="first_name" placeholder="Winston" required />
     </div>
     <div>
       <label for="lname">Last Name</label>
-      <input type="text" name="last_name" id="lname" placeholder="House" required />
+      <input type="text" name="last_name" id="lname" placeholder="Smith" required />
     </div>
     </div>
       <label for="email">Email Address</label>
-      <input type="email" name="email" id="email" placeholder="greghouse@gmail.com" required />
+      <input type="email" name="email" id="email" placeholder="w-smith@mail.com" required />
       <label for="message">Your Message</label>
       <textarea rows="5" name="message" id="message" placeholder="Your message here" required></textarea>
       <button type="submit">Send Message</button>
