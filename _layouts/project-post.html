@@ -13,12 +13,15 @@
   {% include sidebar.html %}
   <article class="project">
   <h1 id="project-title">{{ page.title }}</h1>
-  <p><em>{{ page.start_date | date: "%B %Y" }} to
+  <p id="project-date"><em>{{ page.start_date | date: "%B %Y" }} –
         {% if page.end_date %}
           {{ page.end_date | date: "%B %Y" }}
         {% else %}
           Present
-        {% endif %}</em></p>
+        {% endif %}
+  </em></p>
+
+  <hr>
     {{ content }}
 </article>
 </section>

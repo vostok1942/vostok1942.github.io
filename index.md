@@ -14,7 +14,7 @@ title: Home
   <div id="headline">
     <img src="/assets/images/MA-logo.svg" id="headline-logo">
     <h1>Miron Alexandrov</h1>
-    <em><p>Aerospace Engineering Student &#8226; MEMES Vice Chair &#8226;  Coffee Enjoyer</p></em>
+    <p><em>Aerospace Engineering Student &#8226; Vice Chair of Minority Ethnic Mechanical Engineers Society (MEMES) &#8226; Cappuccino Lover</em></p>
   </div>
 
   <hr>
@@ -23,7 +23,7 @@ title: Home
     <p>
       I'm a second-year aerospace engineering student at the University of Bath with a strong interest in sustainable aviation. Currently a junior engineer on the Bath University Rocket Team, working on the payload and recovery system.</p>
 
-    <p>Alongside my studies, I’m involved with Amideast as a STEM Ambassador and have represented the organisation at several events, most recently the <a href="https://weempowersummit.my.canva.site">Women’s Economic Empowerment Summit</a> held in Dubai.</p>
+    <p>Alongside my studies, I’m involved with Amideast as a STEM Ambassador and have represented the organisation at several events, most recently the <a href="https://weempowersummit.my.canva.site">Women’s Economic Empowerment Summit</a> held in Sharjah.</p>
   </div>
 
 </section>
