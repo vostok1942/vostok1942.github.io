@@ -14,7 +14,6 @@ title: Home
   <div id="headline">
     <img src="/assets/images/MA-logo.svg" id="headline-logo">
     <h1>Miron Alexandrov</h1>
-    <p><em>Aerospace Engineering Student &#8226; Vice Chair of Minority Ethnic Mechanical Engineers Society (MEMES) &#8226; Cappuccino Lover</em></p>
   </div>
 
   <hr>
