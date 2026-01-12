@@ -18,11 +18,11 @@ title: Home
 
   <hr>
   <div id="bio">
-    <p>Hello, and welcome to my personal website.</p>
-    <p>
-      I'm a second-year aerospace engineering student at the University of Bath with a strong interest in sustainable aviation. Currently a junior engineer on the Bath University Rocket Team, working on the payload and recovery system.</p>
+    <p><strong>Hello, and welcome to my website.</strong></p>
 
-    <p>Alongside my studies, I’m involved with Amideast as a STEM Ambassador and have represented the organisation at several events, most recently the <a href="https://weempowersummit.my.canva.site">WE Empower Summit</a> held in Sharjah.</p>
+    <p>I'm a second-year aerospace engineering student at the University of Bath, currently serving as Vice Chair of the Minority Ethnic Mechanical Engineers Society—a community of over 130 students that I'm proud to help lead.</p>
+    <p>Alongside my studies, I represent Amideast as a STEM Ambassador, most recently speaking at the <a href="https://weempowersummit.my.canva.site">WE Empower Summit</a> held in the UAE.</p>
+    <p>I built this site as a space to document my journey through engineering and the work I'm passionate about.</p>
   </div>
 
 </section>
