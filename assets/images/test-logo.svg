@@ -12,9 +12,9 @@
 
     <linearGradient id="goldShine" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#cc4d0e" stop-opacity="0" />
-      <stop offset="40%" stop-color="#ffcc33" stop-opacity="0.3" />
-      <stop offset="50%" stop-color="#fff2cc" stop-opacity="0.3" /> 
-      <stop offset="60%" stop-color="#ffcc33" stop-opacity="0.3" />
+      <stop offset="40%" stop-color="#ffcc33" stop-opacity="0.5" />
+      <stop offset="50%" stop-color="#fff2cc" stop-opacity="0.4" /> 
+      <stop offset="60%" stop-color="#ffcc33" stop-opacity="0.5" />
       <stop offset="100%" stop-color="#cc4d0e" stop-opacity="0" />
     </linearGradient>
 
@@ -32,7 +32,7 @@
       
       .shimmer-rect {
         /* This cubic-bezier creates the 'whoosh' effect: slow start, fast middle, very long taper */
-        animation: cinematicWhoosh 10s cubic-bezier(0.23, 1, 0.32, 1) infinite;
+        animation: cinematicWhoosh 5s cubic-bezier(0.23, 1, 0.32, 1) infinite;
         mix-blend-mode: screen;
       }
     </style>
