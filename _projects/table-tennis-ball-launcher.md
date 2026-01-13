@@ -5,7 +5,7 @@ layout: project-post
 description: "Design and manufacture of a table tennis ball launcher powered by a DC motor. Part of Year 1 and 2 coursework."
 tags: [mechanical, design, prototyping]
 link: "https://github.com/miron/table-tennis-ball-launcher"
-image: "/assets/images/whole-launcher.png"
+image: "/assets/images/tennis-launcher-final-build-resized.png"
 start_date: 2025-03-01
 end_date: 2025-11-1
 ---
@@ -35,12 +35,15 @@ I designed the aiming mechanism with flexibility in mind:
 
 These decisions made the aiming system more robust and adaptable, reducing the likelihood of build-stage setbacks and improving our chances of a successful first-time assembly.
 
+## The Result
 
-<img src="/assets/images/launcher-movement-cropped.gif" align="right" width="100%" alt="GIF of the oscillatory aiming motion.">
-*The launcher moves in an arc using a rotating crank and pivot arm, similar to a Whitworth quick return mechanism.*
+The aiming mechanism performed as intended — the modular gearbox kit allowed us to change the sweep speed, and the adjustable pin on the acrylic turntable provided control over the sweep angle. However, the ball launching subsystem encountered issues during assembly: the rubber wheel failed to make contact with the ball, and our last-minute substitution of a rotating striker (laser-cut MDF) introduced significant vibrations to the machine. While the launcher did not achieve full accuracy across all three zones, the project delivered valuable lessons in mechanical design and manufacturing.
 
+Future improvements could include more precise shaft positioning to prevent occasional lock-ups in the bevel gear meshing, and earlier physical prototyping of the main subsystems would have been useful. Overall, this project showed us the importance of designing for assembly tolerances and real-world constraints, with the adaptable aiming mechanism proving the value of designing for real-world assembly conditions from the outset.
 
-The assembly stage takes place at the start of Year 2 — a chance to test whether our design translates successfully into practice.
+See a short video of our launcher here:
+
+<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1154009153?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;muted=1&amp;loop=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Table Tennis Ball Launcher"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 
 <hr>
