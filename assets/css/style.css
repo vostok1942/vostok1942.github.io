@@ -327,7 +327,7 @@ p {
   }
 
   #about-me {
-    margin-bottom: 1rem;
+    margin: 1rem auto;
   }
 
   #headline p {
@@ -355,8 +355,8 @@ p {
 
   .contact-form button[type="submit"]:hover,
 .contact-form button[type="submit"]:focus {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px var(--accent-orange);
+  /* transform: scale(1.05); */
+  box-shadow: 0 0 0 2px var(--accent-orange);
 }
 
   .project-row:hover {
@@ -432,7 +432,7 @@ textarea::placeholder {
   margin-bottom: 1rem;
   border: none;
   border-radius: var(--border-radius);
-  background: var(--bg-dark);
+  background: #1d1d1d;
   box-shadow: 0 0 0 0.8px var(--accent-orange);
   color: var(--text-light);
   font-size: 1rem;
@@ -457,7 +457,7 @@ textarea::placeholder {
   color: var(--accent-orange);
   font-family: var(--main-font);
   font-weight: bold;
-  border: 2px solid var(--accent-orange);
+  border: 1px solid var(--accent-orange);
   border-radius: var(--border-radius);
   padding: 0.75rem 1.4rem;
   font-size: 1.2rem;
@@ -465,8 +465,8 @@ textarea::placeholder {
   /* transition: all var(--transition) ease; */
   transition: all 400ms cubic-bezier(.47,1.64,.41,.8);
   display: block;
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 10px auto 0;
 }
 
 #result {

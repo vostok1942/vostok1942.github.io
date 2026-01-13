@@ -7,6 +7,7 @@ tags: [mechanical, design, prototyping]
 link: "https://github.com/miron/table-tennis-ball-launcher"
 image: "/assets/images/whole-launcher.png"
 start_date: 2025-03-01
+end_date: 2025-11-1
 ---
 ## The Brief
 As part of our Design, Materials & Manufacturing module, we were tasked with designing and manufacturing a portable table tennis ball launcher from scratch. Positioned at a fixed point on the table, the launcher had to fire three balls to hit three zones on the opposite side: right, middle, and left (as shown below).

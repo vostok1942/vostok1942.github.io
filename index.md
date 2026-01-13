@@ -18,10 +18,10 @@ title: Home
 
   
   <div id="bio">
-    <p><strong>Hello, and welcome to my website.</strong></p>
+    <p><strong>Hello, and welcome to my personal website.</strong></p>
 
     <p>I'm a second-year aerospace engineering student at the University of Bath, currently serving as Vice Chair of the Minority Ethnic Mechanical Engineers Society—a community of over 130 students that I'm proud to help lead.</p>
-    <p>Alongside my studies, I represent Amideast as a STEM Ambassador, most recently speaking at the <a href="https://weempowersummit.my.canva.site">WE Empower Summit</a> held in the UAE.</p>
+    <p>Alongside my studies, I represent Amideast as a STEM Ambassador, most recently speaking at the <a href="https://weempowersummit.my.canva.site" target="_blank">WE Empower Summit</a> held in the UAE.</p>
     <p>I built this site as a space to document my journey through engineering and the work I'm passionate about.</p>
   </div>
 
