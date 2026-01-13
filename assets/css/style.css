@@ -19,7 +19,7 @@
   --main-font: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
   --border-radius: 10px;
   --transition: 0.2s;
-  --sidebar-width: 180px;
+  --sidebar-width: 150px;
   --navbar-height: 4rem;
 }
 
@@ -177,7 +177,8 @@ section {
 }
 
 #headline h1 {
-  font-size: 1.6rem;
+  font-size: 2.2rem;
+  color: var(--accent-orange);
   /* align-self: center; */
   margin: 0;
 }
@@ -192,10 +193,10 @@ section {
 }
 
 #headline-logo {
-  min-height: 150px;
+  height: 7rem;
   /* background-color: red; */
-  margin: auto;
-  margin-top: -10px;
+  margin: 0 auto;
+  /* margin-top: -10px; */
   /* margin-bottom: -10px; */
 }
 
@@ -211,10 +212,12 @@ hr {
 #about-me {
   display: flex;
   flex-direction: column;
+  padding: 15px 32px;
 }
 
 #bio {
   margin: auto;
+  
 }
 
 
@@ -357,7 +360,7 @@ p {
 }
 
   .project-row:hover {
-    box-shadow: 0 0 20px var(--accent-orange);
+    box-shadow: 0 0 0 2px var(--accent-orange);
   }
 }
 
@@ -484,6 +487,7 @@ textarea::placeholder {
 
 .projects-heading {
   text-align: center;
+  font-size: 2.2rem;
   width: 100%;
   position: sticky;
   top: 0;
@@ -491,7 +495,6 @@ textarea::placeholder {
   z-index: 10;         /* Ensure it stays above other elements */
   padding: 20px;       /* Optional: for spacing */
   margin: 0;
-  box-shadow: 0 25px 15px -15px #181818ce;
 }
 
 .projects-list {

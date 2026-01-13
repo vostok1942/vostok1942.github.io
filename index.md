@@ -9,14 +9,14 @@ title: Home
   <h1>Miron Alexandrov</h1>
 </section> -->
 
+<div id="headline">
+    <img src="/assets/images/test-logo.svg" id="headline-logo">
+    <h1>Miron Alexandrov</h1>
+</div>
+
 <section id="about-me">
 
-  <div id="headline">
-    <img src="/assets/images/MA-logo.svg" id="headline-logo">
-    <h1>Miron Alexandrov</h1>
-  </div>
-
-  <hr>
+  
   <div id="bio">
     <p><strong>Hello, and welcome to my website.</strong></p>
 
