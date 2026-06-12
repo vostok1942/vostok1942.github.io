@@ -4,6 +4,20 @@
 
 
 
+@keyframes fadeBlurIn {
+  from {
+    opacity: 0;
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+main.main-content {
+  animation: fadeBlurIn 0.5s ease-out;
+}
 
 
 
@@ -56,6 +70,7 @@ body {
   /* min-height: 100%; */
   height: 100vh;
   z-index: 100;
+  animation: none;
 }
 
 nav ul {
@@ -272,6 +287,10 @@ p {
     flex-direction: column;
   }
 
+  body > :not(.sidebar) {
+    animation: none;
+  }
+
   .sidebar {
     display: none;  /* hide sidebar */
   }
@@ -356,7 +375,7 @@ p {
   .contact-form button[type="submit"]:hover,
 .contact-form button[type="submit"]:focus {
   /* transform: scale(1.05); */
-  box-shadow: 0 0 0 2px var(--accent-orange);
+  box-shadow: 0 0 0 1px var(--accent-orange);
 }
 
   .project-row:hover {
@@ -457,7 +476,7 @@ textarea::placeholder {
   color: var(--accent-orange);
   font-family: var(--main-font);
   font-weight: bold;
-  border: 1px solid var(--accent-orange);
+  border: 2px solid var(--accent-orange);
   border-radius: var(--border-radius);
   padding: 0.75rem 1.4rem;
   font-size: 1.2rem;
@@ -465,7 +484,7 @@ textarea::placeholder {
   /* transition: all var(--transition) ease; */
   transition: all 400ms cubic-bezier(.47,1.64,.41,.8);
   display: block;
-  width: 100%;
+  width: auto;
   margin: 10px auto 0;
 }
 
@@ -488,7 +507,7 @@ textarea::placeholder {
 .projects-heading {
   text-align: center;
   font-size: 2.2rem;
-  width: 100%;
+  width: auto;
   position: sticky;
   top: 0;
   background: var(--bg-dark);  /* Ensure it doesn't become transparent over content */

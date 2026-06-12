@@ -7,6 +7,7 @@ title: Contact
     <div class="text-center">
       <h1>Contact Me</h1>
     </div>
+    
     <form action="https://api.web3forms.com/submit" method="POST" id="form" class="contact-form">
       <input type="hidden" name="access_key" value="b5dbb804-ce2b-404c-8c08-19eef9467f10" />
       <input type="hidden" name="subject" value="New Message On Your Website"/>
