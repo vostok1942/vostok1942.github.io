@@ -508,12 +508,10 @@ textarea::placeholder {
   text-align: center;
   font-size: 2.2rem;
   width: auto;
-  position: sticky;
-  top: 0;
-  background: var(--bg-dark);  /* Ensure it doesn't become transparent over content */
-  z-index: 10;         /* Ensure it stays above other elements */
-  padding: 20px;       /* Optional: for spacing */
-  margin: 0;
+  margin: 2rem auto 0;
+  padding: 0;
+  background: transparent;
+  position: static;
 }
 
 .projects-list {
