@@ -18,14 +18,8 @@ title: Home
 
   
   <div id="bio">
-    <p>Dubai-raised mechanical engineering student at the <a href="https://en.wikipedia.org/wiki/University_of_Bath" target="_blank">University of Bath</a>, focused on building a career in the MENA region. At Convergint MEA, I bridged technical and commercial work, contributing to systems integration delivery across access control, CCTV, intrusion detection, and AV projects.</p>
-    
-    <p>I also represent Amideast as a STEM Ambassador, having spoken at the <a href="https://weempowersummit.my.canva.site" target="_blank">WE Empower Summit</a> in the UAE.</p>
-
-
-
+    <p>Dubai-based mechanical engineering student at the <a href="https://en.wikipedia.org/wiki/University_of_Bath" target="_blank">University of Bath</a>, focused on building a career in the MENA region. Currently on placement as a Project Engineer at Convergint MEA, supporting systems integration delivery across access control, CCTV, intrusion detection and AV projects, from scheduling through to on-site commissioning.</p>
   </div>
-
 
 
 
